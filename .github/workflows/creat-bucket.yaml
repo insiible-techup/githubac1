@@ -8,9 +8,10 @@ on:
 
 env:
     tf_actions_working_dir: ./terraform
-permissions:
-  id-token: write   
-  contents: read
+
+# permissions:
+#   id-token: write   
+#   contents: read
 
 jobs:
     creat-bucket:
