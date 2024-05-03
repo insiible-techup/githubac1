@@ -21,6 +21,8 @@ jobs:
               working-directory: ${{ env.tf_actions_working_dir }}
         permissions:
             pull-requests: write
+            id-token: write   
+            contents: read
 
         steps:
             - name: clone
