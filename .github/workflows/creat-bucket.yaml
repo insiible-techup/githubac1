@@ -14,7 +14,7 @@ env:
 #   contents: read
 
 jobs:
-    creat-bucket:
+    create-bucket:
         runs-on: ubuntu-latest
         defaults:
             run:
@@ -33,8 +33,8 @@ jobs:
             - name: configure aws credentials
               uses: aws-actions/configure-aws-credentials@v3
               with:
-                role-to-assume: arn:aws:iam::746196583728:role/test-role
-                role-session-name: test-role
+                role-to-assume: arn:aws:iam::746196583728:role/make-role
+                role-session-name: make-role
                 aws-region: us-east-1
 
             - name: terraform
